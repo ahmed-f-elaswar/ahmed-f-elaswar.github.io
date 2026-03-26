@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Option 3: Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌙 Dark Mode</button>
   <div class="page-bg" aria-hidden="true"></div>
   <div class="page-grid" aria-hidden="true"></div>
 
@@ -69,84 +71,137 @@
       </article>
     </section>
 
-    <section class="card reveal delay-2">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Programming</h3>
-          <p>C++, Python, C#, JavaScript, Visual Basic, RISC-V Assembly, x86 Assembly, Verilog</p>
+    <section class="card reveal delay-2" id="skills-section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <!-- Option 2: Show/Hide Toggle Button -->
+        <button class="toggle-btn" data-target="skills-content">Hide Skills</button>
+      </div>
+      <div id="skills-content">
+        <div class="skills-grid">
+          <div>
+            <h3>Programming</h3>
+            <p>C++, Python, C#, JavaScript, Visual Basic, RISC-V Assembly, x86 Assembly, Verilog</p>
+          </div>
+          <div>
+            <h3>Web and Software</h3>
+            <p>Django, React, REST APIs, Full-Stack Web Development</p>
+          </div>
+          <div>
+            <h3>Data and ML</h3>
+            <p>NumPy, Pandas, SciPy, Scikit-learn, spaCy, NLTK, Gensim, BeautifulSoup</p>
+          </div>
+          <div>
+            <h3>Tools and Systems</h3>
+            <p>MySQL, PowerShell, VBA, Batch, Computer Architecture, Hardware and Software Maintenance</p>
+          </div>
         </div>
-        <div>
-          <h3>Web and Software</h3>
-          <p>Django, React, REST APIs, Full-Stack Web Development</p>
-        </div>
-        <div>
-          <h3>Data and ML</h3>
-          <p>NumPy, Pandas, SciPy, Scikit-learn, spaCy, NLTK, Gensim, BeautifulSoup</p>
-        </div>
-        <div>
-          <h3>Tools and Systems</h3>
-          <p>MySQL, PowerShell, VBA, Batch, Computer Architecture, Hardware and Software Maintenance</p>
+
+        <!-- Option 4: Dynamic Skills List -->
+        <div class="add-skill-area">
+          <h3>Add a New Skill</h3>
+          <div class="add-skill-row">
+            <input type="text" id="new-skill-input" placeholder="Enter a skill (e.g. Python)" />
+            <button id="add-skill-btn">Add</button>
+          </div>
+          <ul id="dynamic-skills-list" class="clean-list"></ul>
         </div>
       </div>
     </section>
 
-    <section class="card reveal delay-3">
-      <h2>Projects and Experience</h2>
-      <div class="timeline">
-        <article>
-          <h3>Microsoft Intern - Microsoft Egypt</h3>
-          <p class="meta">Oct 2025 - Present</p>
-          <p>Participating in software development and cloud ecosystem training projects.</p>
-        </article>
-        <article>
-          <h3>Research Assistant - AUC Mechanical Engineering</h3>
-          <p class="meta">Sep 2024 - Present</p>
-          <p>Contributing to the design of a tactile graphical display for blind users and supporting accessibility research workflows.</p>
-        </article>
-        <article>
-          <h3>Peer Tutor - Office of the Associate Provost for Innovative Learning Experiences</h3>
-          <p class="meta">2024 - Present</p>
-          <p>Providing tutoring support in computer science and helping students with programming and problem-solving skills.</p>
-        </article>
-        <article>
-          <h3>Student Intern - Office of Institutional Equity (OIE)</h3>
-          <p class="meta">2024 - Present</p>
-          <p>Supported institutional accessibility and inclusion initiatives, including research and policy documentation.</p>
-        </article>
-        <article>
-          <h3>Database and Machine Learning Intern - e& Egypt</h3>
-          <p class="meta">Feb 2025 - Jun 2025</p>
-          <p>Worked with large customer service datasets and helped develop a voice assistant chatbot for service agents.</p>
-        </article>
-        <article>
-          <h3>Data Analytics Intern - Haleon</h3>
-          <p class="meta">Jul 2025 - Aug 2025</p>
-          <p>Built KPI dashboards and automation scripts for reporting and data processing.</p>
-        </article>
-        <article>
-          <h3>Dell Summer Academy and Dell Empower Abilities Intern - Dell Technologies</h3>
-          <p class="meta">2024</p>
-          <p>Completed technical training and projects through accessibility-focused internship programs.</p>
-        </article>
-        <article>
-          <h3>Campus Leadership Roles - AUC</h3>
-          <p class="meta">2022 - 2024</p>
-          <p>Served as Admin Assistant (CSW), Accessibility Adviser (CLT), and First Year Experience Peer Leader (OSL).</p>
-        </article>
+    <section class="card reveal delay-3" id="projects-section">
+      <div class="section-header">
+        <h2>Projects and Experience</h2>
+        <!-- Option 2: Show/Hide Toggle Button -->
+        <button class="toggle-btn" data-target="projects-content">Hide Projects</button>
+      </div>
+      <div id="projects-content">
+        <div class="timeline">
+          <!-- Option 6: Interactive Project Section – each project has a details button -->
+          <article>
+            <h3>Microsoft Intern - Microsoft Egypt</h3>
+            <p class="meta">Oct 2025 - Present</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Participating in software development and cloud ecosystem training projects. Working with Azure services, .NET development, and enterprise-level software engineering practices.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Research Assistant - AUC Mechanical Engineering</h3>
+            <p class="meta">Sep 2024 - Present</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Contributing to the design of a tactile graphical display for blind users and supporting accessibility research workflows. Involved in prototyping, data collection, and usability testing.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Peer Tutor - Office of the Associate Provost for Innovative Learning Experiences</h3>
+            <p class="meta">2024 - Present</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Providing tutoring support in computer science and helping students with programming and problem-solving skills. Conducting one-on-one and group sessions for introductory and advanced CS courses.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Student Intern - Office of Institutional Equity (OIE)</h3>
+            <p class="meta">2024 - Present</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Supported institutional accessibility and inclusion initiatives, including research and policy documentation. Assisted in creating accessible content guidelines.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Database and Machine Learning Intern - e& Egypt</h3>
+            <p class="meta">Feb 2025 - Jun 2025</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Worked with large customer service datasets and helped develop a voice assistant chatbot for service agents. Used Python, NLP libraries, and SQL for data processing and model training.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Data Analytics Intern - Haleon</h3>
+            <p class="meta">Jul 2025 - Aug 2025</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Built KPI dashboards and automation scripts for reporting and data processing. Utilized Power BI, Python, and Excel VBA for business intelligence solutions.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Dell Summer Academy and Dell Empower Abilities Intern - Dell Technologies</h3>
+            <p class="meta">2024</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Completed technical training and projects through accessibility-focused internship programs. Gained hands-on experience with hardware maintenance and enterprise IT solutions.</p>
+            </div>
+          </article>
+          <article>
+            <h3>Campus Leadership Roles - AUC</h3>
+            <p class="meta">2022 - 2024</p>
+            <button class="details-btn">Show Details</button>
+            <div class="project-details hidden">
+              <p>Served as Admin Assistant (CSW), Accessibility Adviser (CLT), and First Year Experience Peer Leader (OSL). Contributed to student welfare, accessibility initiatives, and freshman orientation programs.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="card reveal delay-4">
-      <h2>Certifications and Achievements</h2>
-      <ul class="clean-list">
-        <li>Third Place - Egyptian Collegiate Programming Contest (ECPC), AUC</li>
-        <li>Selected Participant - Global Information Technology Challenge (GITC), Abu Dhabi</li>
-        <li>Selected for the second round of GITC in the Philippines</li>
-        <li>USAID Scholarship Recipient - The American University in Cairo</li>
-        <li>USAID Scholars Program Representative at COP27</li>
-        <li>Student representative coordinating between students and university administration</li>
-      </ul>
+    <section class="card reveal delay-4" id="certifications-section">
+      <div class="section-header">
+        <h2>Certifications and Achievements</h2>
+        <!-- Option 2: Show/Hide Toggle Button -->
+        <button class="toggle-btn" data-target="certifications-content">Hide Certifications</button>
+      </div>
+      <div id="certifications-content">
+        <ul class="clean-list">
+          <li>Third Place - Egyptian Collegiate Programming Contest (ECPC), AUC</li>
+          <li>Selected Participant - Global Information Technology Challenge (GITC), Abu Dhabi</li>
+          <li>Selected for the second round of GITC in the Philippines</li>
+          <li>USAID Scholarship Recipient - The American University in Cairo</li>
+          <li>USAID Scholars Program Representative at COP27</li>
+          <li>Student representative coordinating between students and university administration</li>
+        </ul>
+      </div>
     </section>
 
     <section class="card reveal delay-4">
@@ -158,6 +213,33 @@
         <li><span>GitHub</span><a href="https://github.com/ahmed-f-elaswar" target="_blank" rel="noopener">github.com/ahmed-f-elaswar</a></li>
       </ul>
     </section>
+
+    <!-- Option 1: Contact Form with Validation -->
+    <section class="card reveal delay-4" id="contact-form-section">
+      <h2>Send Me a Message</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Name <span class="required">*</span></label>
+          <input type="text" id="contact-name" name="name" placeholder="Your full name" />
+          <span class="error-msg" id="name-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="contact-email">Email <span class="required">*</span></label>
+          <input type="email" id="contact-email" name="email" placeholder="you@example.com" />
+          <span class="error-msg" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message <span class="required">*</span></label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+          <span class="error-msg" id="message-error"></span>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div id="form-success" class="success-msg hidden"></div>
+      </form>
+    </section>
   </main>
+
+  <!-- JavaScript file (separate as required) -->
+  <script src="script.js"></script>
 </body>
 </html>
