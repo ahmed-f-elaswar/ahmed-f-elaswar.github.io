@@ -65,7 +65,7 @@ export default function HomePage() {
         <article>
           <h3>The American University in Cairo (AUC)</h3>
           <p className="meta">
-            Bachelor of Science in Computer Science, Minor in Mathematics | 2022 &ndash; 2026
+            Bachelor of Science in Computer Science with Honors, Minor in Mathematics | 2022 &ndash; 2026
           </p>
           <p>GPA: 3.45 / 4.0, USAID Scholar &middot; Graduated June 2026</p>
         </article>
