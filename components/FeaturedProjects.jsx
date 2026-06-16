@@ -1,27 +1,63 @@
 const featured = [
   {
-    title: 'Tactile Graphical Display for Blind Users',
-    context: 'AUC Mechanical Engineering — research project',
+    title: 'NVDA Clipboard History',
+    context: 'Open-source NVDA screen reader add-on',
     summary:
-      'Co-designed a refreshable tactile display that converts on-screen graphics into touch-readable output. Contributed to prototyping, data collection, and usability testing with visually impaired users.',
-    tech: ['Accessibility', 'Hardware', 'Usability Research', 'Python'],
-    links: [],
+      'Ditto-inspired clipboard manager built as an NVDA add-on. Supports text and file clipboard items, event-driven monitoring, search, grouping, multi-select paste, save-to-file, and full i18n (English, Arabic, French, Spanish). Released under GPL-3.0.',
+    tech: ['Python', 'NVDA', 'Accessibility', 'i18n', 'GPL-3.0'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/clipboardHistory' },
+    ],
   },
   {
-    title: 'Voice Assistant Chatbot for Customer Service Agents',
-    context: 'Built during e& Egypt internship',
+    title: 'Accessible Dialer',
+    context: 'Android app for blind and low-vision users',
     summary:
-      'Built data pipelines over large customer-service call datasets and helped develop a voice assistant that supports service agents in real time. Worked on data cleaning, NLP feature extraction, and model evaluation.',
-    tech: ['Python', 'NLP', 'spaCy', 'SQL'],
-    links: [],
+      'Native Android dialer designed around screen-reader accessibility, with a tactile-friendly keypad layout and large hit targets.',
+    tech: ['Kotlin', 'Android', 'Accessibility'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/accessible_dialer' },
+    ],
   },
   {
-    title: 'KPI Dashboards & Reporting Automation',
-    context: 'Built during Haleon internship',
+    title: 'Math Content Recognition',
+    context: 'Senior thesis / research project',
     summary:
-      'Designed Power BI dashboards and Python/VBA automation scripts that replaced manual reporting workflows, cutting recurring report turnaround from hours to minutes.',
-    tech: ['Power BI', 'Python', 'Excel VBA'],
-    links: [],
+      'Pipeline for recognizing mathematical content from images and converting it into a screen-reader-friendly representation. Built around Python ML tooling and Wikipedia-derived training corpora.',
+    tech: ['Python', 'Machine Learning', 'OCR', 'Accessibility'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/math-content-recognition-' },
+    ],
+  },
+  {
+    title: 'Linux Process Manager',
+    context: 'Operating systems coursework',
+    summary:
+      'Terminal-based process manager for Linux written in Rust \u2014 lists, inspects, and signals processes through the /proc filesystem with a fast TUI.',
+    tech: ['Rust', 'Linux', '/proc', 'TUI'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/linux-process-manager' },
+    ],
+  },
+  {
+    title: 'RISC-V Simulator',
+    context: 'Computer architecture coursework',
+    summary:
+      'Cycle-accurate simulator for a subset of the RISC-V ISA. Decodes instructions, models the register file and memory, and traces execution for verification against assembly programs.',
+    tech: ['Python', 'RISC-V', 'Computer Architecture'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/risc-v-simulator' },
+    ],
+  },
+  {
+    title: 'Logic Circuits Simulator',
+    context: 'Digital design coursework',
+    summary:
+      'Simulator for combinational and sequential logic circuits with a netlist parser, gate-level evaluation, and waveform-style output for inspection.',
+    tech: ['Python', 'Digital Logic', 'Simulation'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ahmed-f-elaswar/Logic-Circuits-Simulator' },
+    ],
   },
 ];
 
