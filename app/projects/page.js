@@ -15,14 +15,16 @@ export default function ProjectsPage() {
       <section className="card reveal">
         <h2>Featured Projects</h2>
         <p className="section-intro">
-          A curated selection of work I&apos;m most proud of, with the role I played and the tools
-          involved.
+          Things I&apos;ve built &mdash; with the context they came out of and the tools involved.
         </p>
         <FeaturedProjects />
       </section>
 
       <section className="card reveal delay-1">
-        <h2>Experience</h2>
+        <h2>Internships &amp; Experience</h2>
+        <p className="section-intro">
+          Roles I&apos;ve held in industry, research, and on campus.
+        </p>
         <ProjectTimeline />
       </section>
 
