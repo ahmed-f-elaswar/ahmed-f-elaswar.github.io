@@ -1,7 +1,5 @@
 export default function HomePage() {
-  const resumeUrl =
-    process.env.NEXT_PUBLIC_RESUME_URL ||
-    'https://aucegypt0-my.sharepoint.com/:b:/g/personal/ahmed-farid_aucegypt_edu/IQBFyu8QUlN0RaR6AK1NvJlHAdH4WDB6iiGBBs_M6l3yOUs?e=VATIea';
+  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || '/cv.pdf';
   return (
     <>
       <header className="hero card reveal">

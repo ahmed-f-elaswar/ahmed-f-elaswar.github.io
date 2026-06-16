@@ -37,7 +37,7 @@ The site ships with sensible defaults baked in (Web3Forms key for the contact fo
 | `NEXT_PUBLIC_SITE_URL` | `https://ahmed-f-elaswar.github.io` |
 | `NEXT_PUBLIC_WEB3FORMS_KEY` | Personal Web3Forms key (public, baked into the client bundle anyway). |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | `a.f.elaswar@gmail.com` |
-| `NEXT_PUBLIC_RESUME_URL` | OneDrive share link to the CV PDF. |
+| `NEXT_PUBLIC_RESUME_URL` | `/cv.pdf` (served from `public/`). |
 
 ## Deployment
 
