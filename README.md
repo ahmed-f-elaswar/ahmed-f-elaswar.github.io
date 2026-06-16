@@ -1,4 +1,4 @@
-# Ahmed Farid Elaswar — Portfolio
+# Ahmed Farid — Portfolio
 
 Personal portfolio site for [ahmed-f-elaswar.github.io](https://ahmed-f-elaswar.github.io).
 

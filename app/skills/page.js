@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Skills',
   description:
-    'Programming languages, frameworks, data and ML libraries, and systems Ahmed Farid Elaswar works with.',
+    'Programming languages, frameworks, data and ML libraries, and systems Ahmed Farid works with.',
   alternates: { canonical: '/skills/' },
 };
 

@@ -5,7 +5,7 @@ import FeaturedProjects from '@/components/FeaturedProjects';
 export const metadata = {
   title: 'Projects',
   description:
-    'Featured projects, professional experience timeline, and live GitHub activity from Ahmed Farid Elaswar.',
+    'Featured projects, professional experience timeline, and live GitHub activity from Ahmed Farid.',
   alternates: { canonical: '/projects/' },
 };
 

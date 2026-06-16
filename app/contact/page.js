@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 export const metadata = {
   title: 'Contact',
   description:
-    'Get in touch with Ahmed Farid Elaswar \u2014 email, phone, LinkedIn, GitHub, and resume.',
+    'Get in touch with Ahmed Farid \u2014 email, phone, LinkedIn, GitHub, and resume.',
   alternates: { canonical: '/contact/' },
 };
 

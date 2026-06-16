@@ -5,14 +5,14 @@ export default function HomePage() {
       <header className="hero card reveal">
         <img
           src="/images/profile.jpeg"
-          alt="Profile avatar of Ahmed Farid Elaswar"
+          alt="Profile avatar of Ahmed Farid"
           className="profile-image"
           width={132}
           height={132}
         />
         <div>
           <p className="kicker">Personal Portfolio</p>
-          <h1>Ahmed Farid Elaswar</h1>
+          <h1>Ahmed Farid</h1>
           <p className="title">
             Senior Computer Science Student | Accessibility, Data, and AI Enthusiast
           </p>
