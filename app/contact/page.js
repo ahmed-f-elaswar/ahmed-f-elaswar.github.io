@@ -9,7 +9,9 @@ export const metadata = {
 
 const CONTACT_EMAIL =
   process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'a.f.elaswar@gmail.com';
-const RESUME_URL = process.env.NEXT_PUBLIC_RESUME_URL || '/resume.pdf';
+const RESUME_URL =
+  process.env.NEXT_PUBLIC_RESUME_URL ||
+  'https://aucegypt0-my.sharepoint.com/:b:/g/personal/ahmed-farid_aucegypt_edu/IQBFyu8QUlN0RaR6AK1NvJlHAdH4WDB6iiGBBs_M6l3yOUs?e=VATIea';
 
 export default function ContactPage() {
   return (
