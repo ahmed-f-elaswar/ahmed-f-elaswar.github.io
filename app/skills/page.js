@@ -1,7 +1,8 @@
-import DynamicSkills from '@/components/DynamicSkills';
-
 export const metadata = {
-  title: 'Skills | Ahmed Farid Elaswar',
+  title: 'Skills',
+  description:
+    'Programming languages, frameworks, data and ML libraries, and systems Ahmed Farid Elaswar works with.',
+  alternates: { canonical: '/skills/' },
 };
 
 export default function SkillsPage() {
@@ -28,7 +29,6 @@ export default function SkillsPage() {
           <p>MySQL, PowerShell, VBA, Batch, Computer Architecture, Hardware and Software Maintenance</p>
         </div>
       </div>
-      <DynamicSkills />
     </section>
   );
 }

@@ -27,10 +27,12 @@ export default function Navbar() {
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
         >
           {menuOpen ? '✕' : '☰'}
         </button>
-        <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+        <ul id="primary-navigation" className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {links.map((link) => (
             <li key={link.href}>
               <Link
@@ -43,7 +45,12 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <button className="dark-mode-btn" onClick={toggleDarkMode}>
+            <button
+              className="dark-mode-btn"
+              onClick={toggleDarkMode}
+              aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-pressed={darkMode}
+            >
               {darkMode ? '☀️ Light' : '🌙 Dark'}
             </button>
           </li>

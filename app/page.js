@@ -1,4 +1,5 @@
 export default function HomePage() {
+  const resumeUrl = process.env.NEXT_PUBLIC_RESUME_URL || '/resume.pdf';
   return (
     <>
       <header className="hero card reveal">
@@ -16,51 +17,46 @@ export default function HomePage() {
             Senior Computer Science Student | Accessibility, Data, and AI Enthusiast
           </p>
           <p className="bio">
-            Ahmed Farid is a Senior Computer Science student at The American University in Cairo
-            (AUC). He was awarded a scholarship from the U.S. Agency for International Development
-            (USAID) to pursue his bachelor&apos;s degree and is currently a scholar in the Change
-            Leaders Scholarship Program.
+            Senior Computer Science student at the American University in Cairo (AUC), USAID and
+            Change Leaders scholar, and currently a software engineering intern at Microsoft Egypt.
+            I work at the intersection of accessibility, data, and machine learning.
           </p>
+          <div className="hero-actions">
+            <a className="btn-primary" href={resumeUrl} target="_blank" rel="noopener noreferrer">
+              Download Resume
+            </a>
+            <a className="btn-secondary" href="/projects/">
+              View Projects
+            </a>
+          </div>
         </div>
       </header>
 
       <section className="card reveal delay-1">
         <h2>Profile</h2>
         <p>
-          Ahmed Farid is a Senior Computer Science student. He was awarded a scholarship from the
-          U.S. Agency for International Development (USAID) to pursue his bachelor&apos;s degree at
-          The American University in Cairo (AUC). Ahmed represented the USAID Scholars Program at
-          the COP27 conference. He also represented the program in front of a delegation from the
-          American Congress and the U.S. Ambassador to Egypt. Following the suspension of the USAID
-          Scholars Program, Ahmed has continued to play a critical role as a student representative,
-          coordinating between the student body and the university administration.
+          I represented the USAID Scholars Program at COP27 and in front of a U.S. Congressional
+          delegation and the U.S. Ambassador to Egypt. After the program&apos;s suspension, I served
+          as a student representative coordinating between the student body and university
+          administration.
         </p>
         <p>
-          Ahmed is currently a scholar in the Change Leaders Scholarship Program and is presently an
-          intern at Microsoft Egypt.
+          On the competitive side, I placed third in the Egyptian Collegiate Programming Contest
+          (ECPC) at AUC during my freshman year, and was selected by the Ministry of Youth for the
+          Global Information Technology Challenge (GITC) in Abu Dhabi (2023) and the Philippines
+          (2024).
         </p>
         <p>
-          During his freshman year, Ahmed placed third in the Egyptian Collegiate Programming
-          Competition (ECPC) at AUC. In 2023, he was selected by the Ministry of Youth to
-          participate in the Global Information Technology Challenge (GITC) in Abu Dhabi, and the
-          following year, he was selected again to join the second round of the competition in the
-          Philippines.
+          I&apos;ve held a range of roles on campus &mdash; Accessibility Adviser at the Center for
+          Learning and Teaching, Peer Tutor for the Office of the Associate Provost for Innovative
+          Learning Experiences, FYE Peer Leader, Student Intern at the Office of Institutional
+          Equity, and Research Assistant in Mechanical Engineering working on a tactile graphical
+          display for blind users.
         </p>
         <p>
-          Ahmed has held several roles on campus, including Admin Assistant at the Center for Student
-          Wellbeing (CSW), Accessibility Adviser at the Center for Learning and Teaching (CLT), and
-          First Year Experience (FYE) Peer Leader at the Office of Student Life (OSL). He is
-          currently serving as a Peer Tutor at the Office of the Associate Provost for Innovative
-          Learning Experiences. He previously worked as a student intern at the Office of
-          Institutional Equity (OIE) and as a Research Assistant at the Department of Mechanical
-          Engineering.
-        </p>
-        <p>
-          With a strong interest in mathematics-related fields such as competitive programming, data
-          analysis, and statistics, Ahmed aims to pursue a career in machine learning. He has also
-          gained professional experience through several internships, including the Dell Summer
-          Academy and Empower Abilities internship programs at Dell Technologies, a five-month
-          internship at e&amp; Egypt, and a two-month internship at Haleon.
+          My focus areas are competitive programming, data analysis, and machine learning. Past
+          industry experience includes internships at Microsoft, e&amp; Egypt, Haleon, and Dell
+          Technologies (Summer Academy &amp; Empower Abilities).
         </p>
       </section>
 

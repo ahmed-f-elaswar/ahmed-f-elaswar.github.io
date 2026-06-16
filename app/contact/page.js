@@ -1,9 +1,15 @@
 import ContactForm from '@/components/ContactForm';
-import QuoteGenerator from '@/components/QuoteGenerator';
 
 export const metadata = {
-  title: 'Contact | Ahmed Farid Elaswar',
+  title: 'Contact',
+  description:
+    'Get in touch with Ahmed Farid Elaswar \u2014 email, phone, LinkedIn, GitHub, and resume.',
+  alternates: { canonical: '/contact/' },
 };
+
+const CONTACT_EMAIL =
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'a.f.elaswar@gmail.com';
+const RESUME_URL = process.env.NEXT_PUBLIC_RESUME_URL || '/resume.pdf';
 
 export default function ContactPage() {
   return (
@@ -17,7 +23,7 @@ export default function ContactPage() {
           </li>
           <li>
             <span>Email</span>
-            <a href="mailto:ahmed-farid@aucegypt.edu">ahmed-farid@aucegypt.edu</a>
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
           </li>
           <li>
             <span>LinkedIn</span>
@@ -31,16 +37,18 @@ export default function ContactPage() {
               github.com/ahmed-f-elaswar
             </a>
           </li>
+          <li>
+            <span>Resume</span>
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+              Download PDF
+            </a>
+          </li>
         </ul>
       </section>
 
       <section className="card reveal delay-1">
         <h2>Send Me a Message</h2>
         <ContactForm />
-      </section>
-
-      <section className="card reveal delay-2">
-        <QuoteGenerator />
       </section>
     </>
   );

@@ -13,13 +13,16 @@ export default function GitHubRepos() {
         setLoading(true);
         setError(null);
         const res = await fetch(
-          'https://api.github.com/users/ahmed-f-elaswar/repos?sort=updated&per_page=10'
+          'https://api.github.com/users/ahmed-f-elaswar/repos?sort=updated&type=owner&per_page=30'
         );
         if (!res.ok) {
           throw new Error(`GitHub API error: ${res.status}`);
         }
         const data = await res.json();
-        setRepos(data);
+        const filtered = Array.isArray(data)
+          ? data.filter((r) => !r.fork && !r.archived).slice(0, 9)
+          : [];
+        setRepos(filtered);
       } catch (err) {
         setError(err.message);
       } finally {

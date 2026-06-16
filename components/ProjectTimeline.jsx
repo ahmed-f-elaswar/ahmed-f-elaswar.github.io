@@ -62,20 +62,29 @@ export default function ProjectTimeline() {
 
   return (
     <div className="timeline">
-      {projects.map((project, i) => (
-        <article key={i}>
-          <h3>{project.title}</h3>
-          <p className="meta">{project.date}</p>
-          <button className="details-btn" onClick={() => toggleDetails(i)}>
-            {openIndex === i ? 'Hide Details' : 'Show Details'}
-          </button>
-          {openIndex === i && (
-            <div className="project-details">
-              <p>{project.details}</p>
-            </div>
-          )}
-        </article>
-      ))}
+      {projects.map((project, i) => {
+        const panelId = `timeline-panel-${i}`;
+        const isOpen = openIndex === i;
+        return (
+          <article key={i}>
+            <h3>{project.title}</h3>
+            <p className="meta">{project.date}</p>
+            <button
+              className="details-btn"
+              onClick={() => toggleDetails(i)}
+              aria-expanded={isOpen}
+              aria-controls={panelId}
+            >
+              {isOpen ? 'Hide Details' : 'Show Details'}
+            </button>
+            {isOpen && (
+              <div id={panelId} className="project-details">
+                <p>{project.details}</p>
+              </div>
+            )}
+          </article>
+        );
+      })}
     </div>
   );
 }
