@@ -18,7 +18,7 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || 'https://ahmed-f-elaswar.github.io';
 const SITE_NAME = 'Ahmed Farid';
 const SITE_DESCRIPTION =
-  'Personal portfolio of Ahmed Farid \u2014 Computer Science student at AUC, USAID and Change Leaders scholar, and Microsoft Egypt intern. Accessibility, data, and machine learning.';
+  'Personal portfolio of Ahmed Farid \u2014 Computer Science graduate from AUC, USAID and Change Leaders scholar, and Microsoft Egypt intern. Accessibility, data, and machine learning.';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

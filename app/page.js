@@ -14,10 +14,10 @@ export default function HomePage() {
           <p className="kicker">Personal Portfolio</p>
           <h1>Ahmed Farid</h1>
           <p className="title">
-            Senior Computer Science Student | Accessibility, Data, and AI Enthusiast
+            Computer Science Graduate | Accessibility, Data, and AI Enthusiast
           </p>
           <p className="bio">
-            Senior Computer Science student at the American University in Cairo (AUC), USAID and
+            Computer Science graduate from the American University in Cairo (AUC), USAID and
             Change Leaders scholar, and currently a software engineering intern at Microsoft Egypt.
             I work at the intersection of accessibility, data, and machine learning.
           </p>
@@ -67,7 +67,7 @@ export default function HomePage() {
           <p className="meta">
             Bachelor of Science in Computer Science, Minor in Mathematics | 2022 &ndash; 2026
           </p>
-          <p>GPA: 3.55 / 4.0, USAID Scholar</p>
+          <p>GPA: 3.45 / 4.0, USAID Scholar &middot; Graduated June 2026</p>
         </article>
       </section>
 
