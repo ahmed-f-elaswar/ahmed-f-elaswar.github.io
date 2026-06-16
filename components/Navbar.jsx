@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { useTheme } from './ThemeProvider';
 
+const RESUME_URL = process.env.NEXT_PUBLIC_RESUME_URL || '/resume.pdf';
+
 export default function Navbar() {
   const pathname = usePathname();
   const { darkMode, toggleDarkMode } = useTheme();
@@ -21,7 +23,11 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         <Link href="/" className="navbar-brand">
-          Ahmed Farid
+          <span>Ahmed Farid</span>
+          <span className="availability" aria-label="Open to opportunities">
+            <span className="availability-dot" aria-hidden="true" />
+            Open to opportunities
+          </span>
         </Link>
         <button
           className="hamburger"
@@ -30,7 +36,7 @@ export default function Navbar() {
           aria-expanded={menuOpen}
           aria-controls="primary-navigation"
         >
-          {menuOpen ? '✕' : '☰'}
+          {menuOpen ? '\u2715' : '\u2630'}
         </button>
         <ul id="primary-navigation" className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           {links.map((link) => (
@@ -45,13 +51,24 @@ export default function Navbar() {
             </li>
           ))}
           <li>
+            <a
+              className="nav-resume"
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              Resume
+            </a>
+          </li>
+          <li>
             <button
               className="dark-mode-btn"
               onClick={toggleDarkMode}
               aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
               aria-pressed={darkMode}
             >
-              {darkMode ? '☀️ Light' : '🌙 Dark'}
+              {darkMode ? '\u2600\ufe0f Light' : '\ud83c\udf19 Dark'}
             </button>
           </li>
         </ul>
